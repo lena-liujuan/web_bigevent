@@ -5,11 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>大事件-登录/注册</title>
+    <!-- 导入layui样式表 -->
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <!-- 导入自己的css样式 -->
+    <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 
 <body>
+    <!-- 头部log区域 -->
+    <div class="small_log">
+        <img src="/assets/images/logo.png" alt="">
+    </div>
 
+    <!-- 登录注册区 -->
+    <div class="loginAndReg">
+        <!-- 头部 -->
+        <div class="title_box"></div>
+        <!-- 登录页 -->
+        <div class="login-box">
+            <form class="layui-form" action="">
+                <div class="layui-form-item">
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">登录</button>
+                <div class="layui-form-item links">
+                    <a href="javascript:;" id="link_reg">去注册账号</a>
+                </div>
+            </form>
+
+        </div>
+        <!-- 注册页 -->
+        <div class="reg-box">
+            <a href="javascript:;" id="link_login">去登录</a>
+        </div>
+
+    </div>
+
+    <!-- 导入jquery样式 -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入自己的js样式 -->
+    <script src="/assets/js/login.js"></script>
 </body>
 
 </html>
