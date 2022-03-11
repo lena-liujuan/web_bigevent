@@ -37,8 +37,7 @@ $(function () {
                 return layer.msg(res.message);
             }
             layer.msg('注册成功！');
-            window.location.href = '/index.html';
-            // $('#link_login').click();
+            $('#link_login').click();
         })
     })
 
@@ -54,8 +53,7 @@ $(function () {
                 if (res.status !== 0) {
                     return layer.msg(res.message);
                 }
-                // localStorage.setItem('token', res.token)
-                console.log(res.token);
+                localStorage.setItem('token', res.token)
                 layer.msg('登录成功！');
                 window.location.href = '/index.html';
             }
