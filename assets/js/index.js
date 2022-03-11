@@ -4,7 +4,7 @@ $(function () {
 
 // 获取layui中的layer模板；
 var layer = layui.layer;
-// 获取用户的基本信息
+// 获取用户的基本信息，并渲染用户头像
 function getUserInfo() {
     $.ajax({
         method: 'GET',
