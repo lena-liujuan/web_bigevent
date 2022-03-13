@@ -55,6 +55,7 @@ $(function () {
                 }
                 localStorage.setItem('token', res.token)
                 layer.msg('登录成功！');
+                console.log(res.token);
                 window.location.href = '/index.html';
             }
         })
